@@ -16,7 +16,7 @@ function Topbar() {
       </Link>
 
       <div className="flex items-center gap-1">
-        <div className="block md:hidden">
+        <div className="md:hidden">
           <SignedIn>
             <SignOutButton
               signOutCallback={() => {
