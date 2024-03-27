@@ -3,6 +3,9 @@ import { redirect } from "next/navigation";
 import { fetchUser } from "@/lib/actions/user.actions";
 import ProfileHeader from "@/components/shared/ProfileHeader";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
+import { profileTabs } from "@/constants";
+import Image from "next/image";
+import ThreadsTab from "@/components/shared/ThreadsTab";
 
 const Page = async ({ params }: { params: { id: string } }) => {
   if (!params.id) return null;
@@ -67,6 +70,3 @@ const Page = async ({ params }: { params: { id: string } }) => {
 };
 
 export default Page;
-import { profileTabs } from "@/constants";
-import Image from "next/image";
-import ThreadsTab from "@/components/shared/ThreadsTab";
