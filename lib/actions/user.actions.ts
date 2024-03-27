@@ -95,7 +95,7 @@ export async function fetchUserPosts(userId: string) {
 }
 
 // Almost similar to Thead (search + pagination) and Community (search + pagination)
-export async function fetchUsers({
+export async function fetchAllUsers({
   userId,
   searchString = "",
   pageNumber = 1,
